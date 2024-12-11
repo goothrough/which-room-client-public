@@ -4,12 +4,12 @@ export const RoomStatus = {
 }
 
 export const Resource = {
-    VACANT: "空室",
-    IN_USE: "使用中",
+    VACANT: "Vacant",
+    IN_USE: "In use",
     TITLE: "Which Room",
     REFRESH: "Refresh",
     LAST_UPDATE: "Last Updated:",
-    ERROR_MESSAGE: "エラーが発生しました。時間をおいて再度お試しください。",
+    ERROR_MESSAGE: "An error has occurred. Please try again in a few minutes.",
     JOIN: "Join"
 }
 
