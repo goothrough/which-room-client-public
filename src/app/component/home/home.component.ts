@@ -29,7 +29,7 @@ export class HomeComponent {
     this.getZoomStatus();
   }
 
-  refresh() {
+  onRefresh() {
     this.getZoomStatus();
   }
 
