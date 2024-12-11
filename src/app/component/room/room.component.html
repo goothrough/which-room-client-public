@@ -1,0 +1,25 @@
+<mat-card [ngClass]="wholeCardClass">
+    <mat-card-header>
+        <mat-card-title>{{roomDisplayName}}</mat-card-title>
+        <mat-card-subtitle>{{roomName}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <ng-container [ngSwitch]="roomStatus">
+            <div *ngSwitchCase="RoomStatus.VACANT" class="card-content">
+                <mat-icon aria-hidden="false" aria-label="vacant icon" fontIcon="check_circle_outline"></mat-icon>
+                <span>{{Resource.VACANT}}</span>
+            </div>
+            <div *ngSwitchCase="RoomStatus.IN_USE" class="card-content">
+                <mat-icon aria-hidden="false" aria-label="in use icon" fontIcon="account_circle"></mat-icon>
+                <span>{{Resource.IN_USE}}</span>
+            </div>
+        </ng-container>
+        <mat-divider></mat-divider>
+    </mat-card-content>
+    <mat-card-actions>
+        <a mat-raised-button color="primary" [href]="joinUrl" target="_blank">
+            <mat-icon aria-hidden="false" aria-label="in use icon" fontIcon="touch_app"></mat-icon>
+            <span>{{Resource.JOIN}}</span>
+        </a>
+    </mat-card-actions>
+</mat-card>

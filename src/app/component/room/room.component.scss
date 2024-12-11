@@ -1,0 +1,23 @@
+.card-content {
+    display: inline-flex;
+    padding: 15px;
+}
+
+
+.vacant-card {
+    mat-card-content {
+        color: green
+    }
+}
+
+.in-use-card {
+    background-color: rgb(245, 215, 215);
+
+    mat-card-content {
+        color: red;
+    }
+}
+
+mat-card-actions {
+    justify-content: end;
+}

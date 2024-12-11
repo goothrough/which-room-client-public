@@ -1,0 +1,53 @@
+.container {
+    padding: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.door-icon {
+    width:40px;
+	height:40px;
+    mask-image: url("/assets/img/door.png");
+    mask-repeat:    no-repeat;
+    mask-position:  center center;
+    mask-size:      contain;
+    background-color: rgb(202, 95, 248);
+}
+
+.logo {
+    width:100px;
+	height:100px;
+    mask-image: url("/assets/img/logo.png");
+    mask-repeat:    no-repeat;
+    mask-position:  center center;
+    mask-size:      contain;
+    background-color: rgb(0, 0, 0);
+}
+
+.item {
+    flex-basis: 30%;
+    padding: 10px;
+}
+
+.content {
+    height: 90vh;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.header {
+    height: 10vh;
+}
+
+.header-small-text {
+    padding-right: 30px;
+    font-size: 14px;
+    vertical-align: bottom;
+}
+
+.header-timestamp {
+    padding-left: 10px;
+}
