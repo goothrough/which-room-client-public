@@ -1,27 +1,89 @@
-# WhichRoomClient
+# Which Room Client
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+The **Which Room Client** is a front-end application designed to check Zoom room availability. It works in conjunction with the [Which Room API](https://github.com/goothrough/which-room-api-public), providing an easy way to find and manage available rooms.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- User-friendly interface for checking Zoom room availability
+- Seamless integration with the [Which Room API](https://github.com/goothrough/which-room-api-public)
+- Easily manage room availability and join the meeting.
 
-## Code scaffolding
+## Architecture Diagram
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The following diagram illustrates the architecture of the Which Room application:
 
-## Build
+![Which Room Architecture](images/which-room-arch.jpg)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## How It Works
 
-## Running unit tests
+The following image demonstrates how the application looks and functions:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Which Room Client Demo](images/which-room-screenshot.png)
 
-## Running end-to-end tests
+## Technologies Used
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+The development and deployment of the Which Room Client involve the following skills and technologies:
 
-## Further help
+- **Frontend Development**: Angular, TypeScript
+- **Styling**: Angular Material
+- **Version Control**: GitHub
+- **API Integration**: RESTful APIs([Which Room API](https://github.com/goothrough/which-room-api-public))
+- **Deployment**: Cloudflare
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Prerequisites
+
+Before setting up the client, ensure the following:
+
+1. The [Which Room API](https://github.com/goothrough/which-room-api-public) is running and accessible.
+2. Create a Zoom app following the link below.  
+    https://developers.zoom.us/docs/build-flow/
+
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/goothrough/which-room-client-public.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd which-room-client-public
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+## Running the Application
+
+To start the development server, run:
+
+```bash
+ng serve
+```
+
+The application will be available at `http://localhost:4200` by default.
+
+## Building for Production
+
+To build the client for production, run:
+
+```bash
+ng build --prod
+```
+
+The production build will be available in the `dist/` directory.
+
+## Deployment
+
+1. Upload the contents of the `dist/` directory to your hosting service.
+2. Ensure the environment variables are properly configured on the server.
+
+## Acknowledgments
+
+This project was developed to simplify Zoom room availability management by integrating a powerful back-end API with an intuitive front-end interface.
