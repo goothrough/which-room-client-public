@@ -26,9 +26,10 @@ The development and deployment of the Which Room Client involve the following sk
 
 - **Frontend Development**: Angular, TypeScript
 - **Styling**: Angular Material
+- **Cloud Services**: Cloudflare
 - **Version Control**: GitHub
 - **API Integration**: RESTful APIs([Which Room API](https://github.com/goothrough/which-room-api-public))
-- **Deployment**: Cloudflare
+- **Deployment**: GitHub Actions workflows for deploying to Cloudflare
 
 ## Prerequisites
 
